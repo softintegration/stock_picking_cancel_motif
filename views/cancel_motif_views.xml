@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?><odoo>
+  <data>
+
+          <record id="cancel_motif_action" model="ir.actions.act_window">
+              <field name="name">Cancel motif action</field>
+              <field name="res_model">cancel.motif</field>
+              <field name="view_mode">tree,form</field>
+              <field name="domain">[('model','=','stock.picking')]</field>
+              <field name="context">{'default_model':'stock.picking'}</field>
+              <field name="target">current</field>
+          </record>
+
+          <menuitem id="menu_cancel_motif_settings" name="Cancel motif" parent="stock.menu_stock_config_settings"
+            sequence="10" groups="stock.group_stock_manager"/>
+
+          <menuitem action="cancel_motif_action"
+              id="cancel_motif_action_menu"
+              name="Cancel motif"
+              parent="stock_picking_cancel_motif.menu_cancel_motif_settings"
+              sequence="1"
+              groups="stock.group_stock_manager"/>
+
+
+  </data>
+</odoo>
