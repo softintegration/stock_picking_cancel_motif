@@ -19,7 +19,8 @@
         </xpath>
         <xpath expr="//group[@name='other_infos']" position="after">
             <group string="Cancel motif" name="cancel_motif" attrs="{'invisible':[('cancel_motif_id','=',False)]}">
-                <field name="cancel_motif_id" readonly="1"/>
+                <field name="cancel_motif_id" invisible="1"/>
+                <field name="cancel_motif" readonly="1"/>
             </group>
         </xpath>
       </field>

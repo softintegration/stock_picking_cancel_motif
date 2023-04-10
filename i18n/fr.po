@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 15.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-13 09:03+0000\n"
-"PO-Revision-Date: 2022-11-13 09:03+0000\n"
+"POT-Creation-Date: 2023-04-10 09:53+0000\n"
+"PO-Revision-Date: 2023-04-10 09:53+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -21,9 +21,16 @@ msgid "Cancel"
 msgstr "Annuler"
 
 #. module: stock_picking_cancel_motif
+#: model:ir.model.fields,field_description:stock_picking_cancel_motif.field_stock_picking__cancel_date
+msgid "Cancel date"
+msgstr "Date d'annulation"
+
+#. module: stock_picking_cancel_motif
+#: model:ir.model.fields,field_description:stock_picking_cancel_motif.field_stock_picking__cancel_motif
 #: model:ir.model.fields,field_description:stock_picking_cancel_motif.field_stock_picking__cancel_motif_id
 #: model:ir.ui.menu,name:stock_picking_cancel_motif.cancel_motif_action_menu
 #: model:ir.ui.menu,name:stock_picking_cancel_motif.menu_cancel_motif_settings
+#: model_terms:ir.ui.view,arch_db:stock_picking_cancel_motif.view_picking_form_inherited
 msgid "Cancel motif"
 msgstr "Motif d'annulation"
 
